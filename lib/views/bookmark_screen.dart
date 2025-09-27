@@ -95,7 +95,7 @@ class _BookmarkScreenState extends State<BookmarkScreen> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 6, vertical: 2),
                       decoration: BoxDecoration(
-                          color: Colors.grey,
+                          color: Colors.grey[600],
                           borderRadius: BorderRadius.circular(4)),
                       child: Text(
                         article.source_id ?? 'Unknown',
@@ -121,7 +121,10 @@ class _BookmarkScreenState extends State<BookmarkScreen> {
                 ),
               ),
               trailing: IconButton(
-                icon: Icon(Icons.delete_outline, color: Colors.red[400]),
+                icon: Icon(
+                  Icons.delete_outline_rounded,
+                  color: Colors.red[400],
+                ),
                 onPressed: () => controller.removeBookmark(article),
               ),
               onTap: () => Get.to(() => WebviewScreen(
