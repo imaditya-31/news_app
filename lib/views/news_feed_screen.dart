@@ -91,7 +91,7 @@ class _NewsFeedScreenState extends State<NewsFeedScreen> {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 6, vertical: 2),
                           decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Colors.grey[600],
                               borderRadius: BorderRadius.circular(4)),
                           child: Text(
                             article.source_id ?? 'Unknown',
